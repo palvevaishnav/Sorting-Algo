@@ -9,6 +9,13 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+//Function to generate a random array
+void generate(int *a,int n){
+	for(int i=0;i<n;i++){
+		array[i]=rand()%100;
+	}
+	return;
+}
 
 void swap(int *big,int *small){
     // using pointers so that we can call by referance and it will be easy to return the values as \
@@ -41,8 +48,18 @@ void bubble(int *arr,int arrlen){
 
 int main(){
     // an array which has to be sorted 
-    int array[]={12,5,0,6,9,48,1,2,36,4,8,6};
-    int arrlen=0;  
+    //int array[]={12,5,0,6,9,48,1,2,36,4,8,6};
+    // instead of passing an array manually let us create a random array;
+	int *array;
+	int arrlen=0;
+	printf("Enter the length of array to be generated randomly:");
+	scanf("%d",&arrlen);
+	generate(array,arrlen);
+	printf("The random array created is: \n");
+	for(int i=0;i<arrlen;i++){
+		printf(" %d",array[i]);
+	}
+	  
     // we will need te lenngth of that array to perrform sortinng so
     arrlen= sizeof(array) / sizeof(array[0]);
 
@@ -55,5 +72,6 @@ int main(){
 
     }
 
+	return 0;
 }
 
