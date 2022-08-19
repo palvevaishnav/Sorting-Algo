@@ -12,7 +12,7 @@
 //Function to generate a random array
 void generate(int *a,int n){
 	for(int i=0;i<n;i++){
-		array[i]=rand()%100;
+		a[i]=rand()%100;
 	}
 	return;
 }
@@ -61,14 +61,15 @@ int main(){
 	}
 	  
     // we will need te lenngth of that array to perrform sortinng so
-    arrlen= sizeof(array) / sizeof(array[0]);
+    //arrlen= sizeof(array) / sizeof(array[0]);
 
     // will pass this array and its length to a sorting function
     bubble(array,arrlen);
 
     // now we have  a sorted array ,so we will print it,
+	printf("the sorted array is:\n");
     for(int i=0;i<arrlen;i++){
-        printf("%d ",array[i]);
+        printf(" %d ",array[i]);
 
     }
 
