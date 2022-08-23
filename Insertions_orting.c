@@ -53,6 +53,12 @@ void random(int *array,int l){
     for(int i=0;i<l;i++){
         array[i]=rand()%100;
     }
+    printf("The random array is: \n");
+    for(int i=0;i<l;i++){
+        printf(" %d",a[i]);
+    }
+    
+    return;
 }
 
 int main(){
