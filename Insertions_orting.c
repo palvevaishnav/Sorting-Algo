@@ -63,5 +63,7 @@ int main(){
     // random(array,l);
 
     InsertionSort(array,l);
+    
+    return 0;
 
 }
