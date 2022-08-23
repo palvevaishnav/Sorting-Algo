@@ -23,7 +23,7 @@ void InsertionSort(int *a,int l){
         first run a for loop to.
     */
    if(l==0){
-    printf("No array ! enter an array please\n");
+    printf("\nNo array ! enter an array please\n");
     // main();
    }
    else{
@@ -39,7 +39,7 @@ void InsertionSort(int *a,int l){
         }
     }
     }
-    printf("The sorted array is: \n");
+    printf("\nThe sorted array is: \n");
     for(int i=0;i<l;i++){
         printf(" %d",a[i]);
     }
@@ -49,13 +49,13 @@ void InsertionSort(int *a,int l){
     return;
 }
 
-void random(int *array,int l){
+void randomarray(int *array,int l){
     for(int i=0;i<l;i++){
         array[i]=rand()%100;
     }
-    printf("The random array is: \n");
+    printf("\nThe random array is: \n");
     for(int i=0;i<l;i++){
-        printf(" %d",a[i]);
+        printf(" %d",array[i]);
     }
     
     return;
@@ -66,7 +66,7 @@ int main(){
     int l=10;
     // printf("Enter the length of array :");
     // scanf("%d", &l);
-    // random(array,l);
+    // randomarray(array,l);
 
     InsertionSort(array,l);
     
