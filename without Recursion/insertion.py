@@ -11,6 +11,17 @@ def insertion(l):
             else:
                 break
 
+#using a while loop
+def insertionsort(seq):
+    for i in range (len(seq)):
+        pos=i
+        while (pos > 0 and seq[pos] < seq[pos-1] ):
+            (seq[pos],seq[pos-1]) = (seq[pos-1],seq[pos])
+            pos -= 1
+
+                
+                
+                
 choice=str(input("Do you want to create a random list(y/n): "))
 if(choice=='y'):
     n = int(input("enter the size of list: "))
@@ -28,5 +39,6 @@ else:
 start=0
 print("Before Sorting:", a)
 insertion(a)
+#insertionsort(a)
 print("After sorting :", a)
 print()
