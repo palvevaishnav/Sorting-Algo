@@ -1,3 +1,6 @@
+#Compare this algorithm with backtracking to ubnderstand the concept
+#first pointer i moves forword while the another pointer j moves back from i (every time it is incremented and sort the array upto i index 
+#then i moves forward and j places the ith element at its correct place.
 import random
 
 def insertion(l):
