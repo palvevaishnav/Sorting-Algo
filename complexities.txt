@@ -1,0 +1,14 @@
+Generally, there is always more than one way to solve a problem in computer science with different algorithms. Therefore, it is highly required to use a method to compare the solutions in order to judge which one is more optimal. The method must be:
+
+Independent of the machine and its configuration, on which the algorithm is running on.
+Shows a direct correlation with the number of inputs.
+Can distinguish two algorithms clearly without ambiguity.
+There are two such methods used, time complexity and space complexity which are discussed below:
+
+Time Complexity:
+The time complexity of an algorithm quantifies the amount of time taken by an algorithm to run as a function of the length of the input. 
+Note that the time to run is a function of the length of the input and not the actual execution time of the machine on which the algorithm is running on.
+
+Space Complexity: 
+The space complexity of an algorithm quantifies the amount of space taken by an algorithm to run as a function of the length of the input. 
+Consider an example: Suppose a problem to find the frequency of array elements.
